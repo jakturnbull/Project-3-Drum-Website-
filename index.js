@@ -17,27 +17,27 @@ for (let i = 0; i <= document.querySelectorAll(".drum").length; i++) {
           break;
 
           case "a":
-              var kick-bass = new Audio("sounds/kick-bass.mp3");
-              kick-bass.play();
+              var kick_bass = new Audio("sounds/kick_bass.mp3");
+              kick_bass.play();
             break;
 
             case "s":
-                var tom1 = new Audio("sounds/tom-1.mp3");
+                var tom1 = new Audio("sounds/tom_1.mp3");
                 tom1.play();
               break;
 
               case "d":
-                  var tom2 = new Audio("sounds/tom-2.mp3");
+                  var tom2 = new Audio("sounds/tom_2.mp3");
                   tom2.play();
                 break;
 
                 case "j":
-                    var tom3 = new Audio("sounds/tom-3.mp3");
+                    var tom3 = new Audio("sounds/tom_3.mp3");
                     tom3.play();
                   break;
 
                   case "k":
-                      var song = new Audio("sounds/tom-4.mp3");
+                      var song = new Audio("sounds/tom_4.mp3");
                       song.play();
                     break;
 
@@ -54,11 +54,11 @@ for (let i = 0; i <= document.querySelectorAll(".drum").length; i++) {
 }
 
 
+document.addEventListener("keypress", function() {
+  alert("key was pressed");
+});
 
 
 
 
-
-//var song = new Audio("sounds/tom-1.mp3");
-//song.play();
 //this.style.color = "white";
