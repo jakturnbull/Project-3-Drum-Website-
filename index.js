@@ -2,17 +2,15 @@
 //for each button it adds an event listener that makes an alert pop up when clicked
 //the buttons are stored querySelectorAll node list the loop iterates through
 
-document.addEventListener("keydown", function(event) {
-  console.log("key was pressed");
-  console.log(event);
+
 });
 
 for (let i = 0; i <= document.querySelectorAll(".drum").length; i++) {
-  document.querySelectorAll("button")[i].addEventListener("keydown", function(event) {
+  document.addEventListener("keydown", function(event) {
 
-    var buttonInnerHTML = this.innerHTML;
+    var keyDrum = event.key;
 
-    switch (buttonInnerHTML) {
+    switch (keyDrum) {
 
       case "w":
         var snare = new Audio("sounds/snare.mp3");
@@ -50,7 +48,7 @@ for (let i = 0; i <= document.querySelectorAll(".drum").length; i++) {
         break;
 
       default:
-        console.log(buttonInnerHTML);
+        console.log(keyDrum);
 
     }
 
