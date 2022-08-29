@@ -1,9 +1,6 @@
-//The code below loops through the number of buttons present on the webpage
-//for each button it adds an event listener that makes an alert pop up when clicked
-//the buttons are stored querySelectorAll node list the loop iterates through
 
 
-});
+
 
 for (let i = 0; i <= document.querySelectorAll(".drum").length; i++) {
   document.addEventListener("keydown", function(event) {
@@ -54,11 +51,3 @@ for (let i = 0; i <= document.querySelectorAll(".drum").length; i++) {
 
   });
 }
-
-
-
-
-
-
-
-//this.style.color = "white";
