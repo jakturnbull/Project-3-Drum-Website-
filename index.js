@@ -8,6 +8,9 @@ for (let i = 0; i <= document.querySelectorAll(".drum").length; i++) {
 
     makeSound(buttonInnerHTML);
 
+    buttonAnimation(buttonInnerHTML);
+
+
   });
 
   //dettects keyboard strokes and then calls the function that makes drum sounds with key as perameter of that function
@@ -16,6 +19,7 @@ for (let i = 0; i <= document.querySelectorAll(".drum").length; i++) {
   document.addEventListener("keydown", function(event) {
 
     makeSound(event.key);
+    buttonAnimation(event.key);
   });
 
 }
@@ -62,4 +66,13 @@ function makeSound(key) {
       console.log(buttonInnerHTML);
 
   }
-};
+}
+
+function buttonAnimation(currentKey){
+
+  var activeButton = document.querySelector("."+currentKey);
+  activeButton.classList.add("pressed");
+  setTimeout(function() {
+    activeButton.classList.remove("pressed")
+  }, 100);
+}
